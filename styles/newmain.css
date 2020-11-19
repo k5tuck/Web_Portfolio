@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20rem 10rem 10rem 15rem 9rem;
+  width: 100%;
+}
+#header {
+  background-color: gold;
+}
+#about {
+  background-color: rgb(71, 96, 207);
+}
+#skills {
+  background-color: rgb(165, 54, 187);
+}
+#goals {
+  background-color: pink;
+}
+#projects {
+  background-color: rgb(32, 221, 73);
+}
+#contact {
+  background-color: rgb(235, 84, 84);
+}
