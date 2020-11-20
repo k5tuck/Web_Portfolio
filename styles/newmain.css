@@ -1,24 +1,72 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20rem 10rem 10rem 15rem 9rem;
   width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 1.2fr 0.9fr;
+  grid-template-areas:
+    "header header header header"
+    "about about about about"
+    "skills skills goals goals"
+    "projects projects projects projects"
+    "contact contact contact contact";
+  grid-gap: 0.2rem;
 }
 #header {
   background-color: gold;
+  grid-area: header;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 #about {
   background-color: rgb(71, 96, 207);
+  grid-area: about;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 #skills {
   background-color: rgb(165, 54, 187);
+  grid-area: skills;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 #goals {
   background-color: pink;
+  grid-area: goals;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 #projects {
   background-color: rgb(32, 221, 73);
+  grid-area: projects;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 #contact {
   background-color: rgb(235, 84, 84);
+  grid-area: contact;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+/* Mobile Design */
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.2fr 1.6fr 1.4fr 1.9fr 0.4fr;
+    grid-template-areas:
+      "header"
+      "about"
+      "skills"
+      "goals"
+      "projects"
+      "contact";
+  }
 }
