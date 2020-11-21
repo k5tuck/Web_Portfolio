@@ -10,13 +10,14 @@ body {
   width: 100%;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 1.5fr 1.2fr 0.9fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 1.2fr 0.9fr 0.5fr;
   grid-template-areas:
     "header header header header"
     "about about about about"
     "skills skills goals goals"
     "projects projects projects projects"
-    "contact contact contact contact";
+    "contact contact contact contact"
+    "footer footer footer footer";
   grid-gap: 0.2rem;
 }
 #header {
@@ -52,6 +53,12 @@ body {
 #contact {
   background-color: rgb(235, 84, 84);
   grid-area: contact;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+#footer {
+  background-color: rgb(206, 124, 32);
+  grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
