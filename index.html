@@ -1,252 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin Tucker</title>
-    <link rel="favicon.io" type="icon" href="#" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./public/images/apple-touch-icon.png"
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./public/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./public/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./public/images/site.webmanifest" />
-
-    <link rel="stylesheet" type="text/css" href="./public/styles/newmain.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
-  <body>
-    <div class="header" id="headerlink">
-      <div>
-        <h2>Welcome! I'm Kevin!</h2>
-        <h3>Here's a couple of Quick Links</h3>
-        <ul>
-          <li><a href="#biolink">Biography</a></li>
-          <li><a href="#skillslink">Skills</a></li>
-          <li><a href="#projectslink">Projects</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="contact" id="contactlink">
-      <div>
-        <img
-          id="contactpic"
-          src="./public/images/miniprofilepic.jpg"
-          alt="Kevin Tucker"
-        />
-      </div>
-      <h2>Kevin Tucker</h2>
-      <nav id="icons">
-        <div>
-          <a href="mailto:Kevin.Tucker19@gmail.com">
-            <img src="./public/icons/icons8-mail-50.png" alt="Kevin's Email" />
-          </a>
-          <p></p>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/ktuck18">
-            <img
-              src="./public/icons/icons8-linkedin-50.png"
-              alt="Kevin's LinkedIn"
-            />
-          </a>
-          <p></p>
-        </div>
-        <div>
-          <a href="https://www.https://github.com/k5tuck">
-            <img
-              src="./public/icons/icons8-github-50.png"
-              alt="Kevin's Github"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://twitter.com/k5tuck">
-            <img
-              src="./public/icons/icons8-twitter-50.png"
-              alt="Kevin's Twitter"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://angel.co/u/k5tuck">
-            <img
-              src="./public/icons/icons8-angellist-50.png"
-              alt="Kevin's Angel List"
-            />
-          </a>
-        </div>
-      </nav>
-      <div class="resume">
-        <a
-          href="./public/files/resume.pdf"
-          target="_blank"
-          rel="noreferrer noopener"
-          type="file/pdf"
-          ><button>Download Resume</button></a
-        >
-      </div>
-    </div>
-    <div class="bio" id="biolink">
-      <div>
-        <h2>All About Me</h2>
-      </div>
-      <div id="bio-content">
-        <div>
-          <img
-            src="./public/images/minibiopic.jpeg"
-            alt="Kevin's Biography Picture"
-          />
-        </div>
-        <div>
-          <p>
-            Hello Hello! I'll try to give a really quick explanation of who I am
-            (okay, maybe not so quick). My name is Kevin Tucker, and I am an
-            aspiring Software Engineer. I've gained some useful knowledge from
-            my time in the military, and some even greater friends. It's give me
-            the opportunity to live a couple of different places like: Japan,
-            Colorado, California, Virginia (I loved Japan the most). I try to
-            stay current with new technologies, because I hope to be one of the
-            people to make a new technology myself one day. I do my best to make
-            sure I stay current with things like Fin-Tech, Space, Blockchain,
-            Energy technologies, and Medical/Biotech related topics. I love
-            learning, anime, engineering, aerospace/astronautics, and
-            entrepreneurship. I have plans to begin my own startups one day,
-            after I obtain some more experience and can see into this field
-            firsthand. Feel free to
-            <span>contact me</span> though if you want to work together, hire
-            me, or just be friends!
-          </p>
+  <body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="inner">
+        <nav>
           <ul>
-            <li>City: Warner Robins</li>
-            <li>State: Georgia</li>
-            <li><a href="#contactlink">Contact Me!</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <li>
+              <a
+                href="./public/files/resume.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                type="file/pdf"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Intro -->
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+          <h1>Kevin Tucker</h1>
+          <img
+            id="contactpic"
+            src="./public/images/miniprofilepic.jpg"
+            alt="Kevin Tucker"
+          />
+          <p>Welcome! I'm Kevin</p>
+          <ul class="actions">
+            <!-- <li><a href="#one" class="button scrolly">Learn more</a></li> -->
           </ul>
         </div>
+      </section>
+
+      <!-- Biography -->
+      <section id="bio" class="wrapper alt spotlights">
+        <section>
+          <a
+            ><img
+              src="./public/images/minibiopic.jpeg"
+              alt="Kevin's Biography Picture"
+              data-position="center center"
+		  /></a>
+          <div class="content">
+            <div class="inner">
+              <h2>All About Me</h2>
+              <p>
+                Hello Hello! I'll try to give a really quick explanation of who
+                I am (okay, maybe not so quick). My name is Kevin Tucker, and I
+                am an aspiring Software Engineer. I've gained some useful
+                knowledge from my time in the military, and some even greater
+                friends. It's give me the opportunity to live a couple of
+                different places like: Japan, Colorado, California, Virginia (I
+                loved Japan the most). I try to stay current with new
+                technologies, because I hope to be one of the people to make a
+                new technology myself one day. I do my best to make sure I stay
+                current with things like Fin-Tech, Space, Blockchain, Energy
+                technologies, and Medical/Biotech related topics. I love
+                learning, anime, engineering, aerospace/astronautics, and
+                entrepreneurship. I have plans to begin my own startups one day,
+                after I obtain some more experience and can see into this field
+                firsthand. Feel free to
+                <span>contact me</span> though if you want to work together,
+                hire me, or just be friends!.
+              </p>
+              <ul class="actions">
+                <li>
+					<a href="mailto:Kevin.Tucker19@gmail.com?subject=Hello%20Kevin!%20I've%20just%20seen%20your%20Profile..."
+					 class="button primary">
+					Send Me An Email
+					</a>
+				</li>
+                <li>
+					<a href="./public/files/resume.pdf"
+					target="_blank"
+					rel="noreferrer noopener"
+					type="file/pdf" class="button primary icon solid fa-download">Download Resume
+					</a>
+				</li>
+              </ul>
+            </div>
+          </div>
+		</section>
+	  </section>
+		
+		<!-- Skills -->
+        <section id="skills" class="wrapper style3-alt spotlights">
+		  <section>
+			<div class="content">
+            <div class="inner">
+			  <h2>Skills</h2>
+			  <div class="skills">
+				<div>
+					<img src="./public/icons/icons8-html-5-50.png" alt="HTML5" />
+					<h4>HTML5</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-css3-50.png" alt="CSS3" />
+					<h4>CSS3</h4>
+				  </div>
+				  <div>
+					<img
+					  src="./public/icons/icons8-amazon-web-services-50.png"
+					  alt="AWS"
+					/>
+					<h4>AWS</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-github-50.png" alt="Github" />
+					<h4>Github</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/expressjs.png" alt="Expressjs" />
+					<h4>Express JS</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-nodejs-50.png" alt="Nodejs" />
+					<h4>Nodejs</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-python-50.png" alt="Python" />
+					<h4>Python</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-javascript-50.png" alt="Javascript" />
+					<h4>Javascript</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-jquery-50.png" alt="Jquery" />
+					<h4>Jquery</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-react-50.png" alt="React" />
+					<h4>React</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-redux-50.png" alt="Redux" />
+					<h4>Redux</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-docker-50.png" alt="Docker" />
+					<h4>Docker</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-kubernetes-50.png" alt="Kubernetes" />
+					<h4>Kubernetes</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-linux-50.png" alt="Linux" />
+					<h4>Linux</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-postgresql-50.png" alt="PostgreSQL" />
+					<h4>SQL</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-java-50.png" alt="Java" />
+					<h4>Java</h4>
+				  </div>
+				  <div>
+					<img src="./public/icons/icons8-spring-logo-50.png" alt="Spring" />
+					<h4>Spring</h4>
+				  </div>
+				</div>
+			  </ul>
+            </div>
+		  </div>
+		</section>
+    </section>
+
+      <!-- Projects -->
+      <section id="projects" class="wrapper style3 fade-up">
+        <div class="inner">
+          <h2>Projects</h2>
+          <p>
+            These are My Current and Past Projects
+          </p>
+          <div class="features">
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>RedClover</h3>
+              <p>
+				This is the beginning of a banking infrastructure that my team
+				and I are building from the ground up.
+			  </p>
+			  <ul class="actions">
+				<li><a href="#" class="button">Website</a></li>
+				<li><a href="#" class="button">Github</a></li>
+			</ul>
+            </section>
+            <section>
+              <span class="icon solid major fa-lock"></span>
+              <h3>Project #2</h3>
+              <p>
+                Project Description
+			  </p>
+			  <ul class="actions">
+				<li><a href="#" class="button">Website</a></li>
+				<li><a href="#" class="button">Github</a></li>
+			</ul>
+            </section>
+            <section>
+              <span class="icon solid major fa-cog"></span>
+              <h3>Project #3</h3>
+              <p>
+                Project Description
+			  </p>
+			  <ul class="actions">
+				<li><a href="#" class="button">Website</a></li>
+				<li><a href="#" class="button">Github</a></li>
+			</ul>
+            </section>
+            <section>
+              <a href="generic.html" ><span class="icon solid major fa-desktop"></span></a>
+			  <h3>Project #4</h3>
+              <p>
+                Project Description
+			  </p>
+				<ul class="actions">
+					<li><a href="#" class="button">Website</a></li>
+					<li><a href="#" class="button">Github</a></li>
+				</ul>
+            </section>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Interest -->
+
+      <section id="interest">
+        <div class="content">
+			<h2>Interests</h2>
+          <div class="inner" id="interest-list">
+			<div id="interest-pics">
+				<div>
+					<h4>Energy</h4>
+					<a href="#" class="image">
+						<img src="public/images/energy.jpg" alt="" data-position="top center" width="450" height="450"/>
+					</a>
+				</div>
+				<div>
+					<h4>Fin-Tech</h4>
+					<a href="#" class="image">
+						<img src="public/images/fintech.jpg" alt="" data-position="top center"  width="450" height="450"/>
+					</a>
+				</div>
+				<div>
+					<h4>Space</h4>
+					<a href="#" class="image">
+						<img src="public/images/space.jpg" alt="" data-position="top center"  width="450" height="450"/>
+					</a>
+				</div>
+			</div>
+			<p>
+				I have interest in a lot of things. But my current <i>Top 3</i> are the above.
+			</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style2">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; 2020 Kevin Tucker. All rights reserved.</li>
+		  <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>
+				<ul class="icons">
+					Social:  
+				<li>
+				<a href="https://twitter.com/k5tuck" class="icon brands fa-twitter"
+					><span class="label">Twitter</span></a
+				>
+				</li>
+				<li>
+				<a href="https://www.github.com/k5tuck" class="icon brands fa-github"
+					><span class="label">GitHub</span></a
+				>
+				</li>
+				<li>
+				<a href="https://angel.co/u/k5tuck" class="icon brands fa-angellist"
+					><span class="label">Angellist</span></a
+				>
+				</li>
+				<li>
+				<a href="https://www.linkedin.com/in/ktuck18" class="icon brands fa-linkedin-in"
+					><span class="label">LinkedIn</span></a
+				>
+				</li>
+				</ul>
+			</li>
+        </ul>
       </div>
-    </div>
-    <div class="skills" id="skillslink">
-      <div>
-        <h2>Skills</h2>
-      </div>
-      <div id="skillsicons">
-        <div>
-          <img src="./public/icons/icons8-html-5-50.png" alt="HTML5" />
-          <h4>HTML5</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-css3-50.png" alt="CSS3" />
-          <h4>CSS3</h4>
-        </div>
-        <div>
-          <img
-            src="./public/icons/icons8-amazon-web-services-50.png"
-            alt="AWS"
-          />
-          <h4>AWS</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-github-50.png" alt="Github" />
-          <h4>Github</h4>
-        </div>
-        <div>
-          <img src="./public/icons/expressjs.png" alt="Expressjs" />
-          <h4>Express JS</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-nodejs-50.png" alt="Nodejs" />
-          <h4>Nodejs</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-python-50.png" alt="Python" />
-          <h4>Python</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-javascript-50.png" alt="Javascript" />
-          <h4>Javascript</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-jquery-50.png" alt="Jquery" />
-          <h4>Jquery</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-react-50.png" alt="React" />
-          <h4>React</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-redux-50.png" alt="Redux" />
-          <h4>Redux</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-docker-50.png" alt="Docker" />
-          <h4>Docker</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-kubernetes-50.png" alt="Kubernetes" />
-          <h4>Kubernetes</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-linux-50.png" alt="Linux" />
-          <h4>Linux</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-postgresql-50.png" alt="PostgreSQL" />
-          <h4>SQL</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-java-50.png" alt="Java" />
-          <h4>Java</h4>
-        </div>
-        <div>
-          <img src="./public/icons/icons8-spring-logo-50.png" alt="Spring" />
-          <h4>Spring</h4>
-        </div>
-      </div>
-    </div>
-    <div class="projects" id="projectslink">
-      <div><h2>Projects</h2></div>
-      <div class="proj-container">
-        <div>
-          <h3>Project Title</h3>
-          <a href="#"><img src="./public/images/minibiopic.jpeg" alt="" /></a>
-          <p>Project Desc</p>
-        </div>
-        <div>
-          <h3>Project Title</h3>
-          <a href="#"><img src="./public/images/minibiopic.jpeg" alt="" /></a>
-          <p>Project Desc</p>
-        </div>
-        <div>
-          <h3>Project Title</h3>
-          <a href="#"><img src="./public/images/minibiopic.jpeg" alt="" /></a>
-          <p>Project Desc</p>
-        </div>
-        <div>
-          <h3>Project Title</h3>
-          <a href="#"><img src="./public/images/minibiopic.jpeg" alt="" /></a>
-          <p>Project Desc</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <h2>Footer</h2>
-      <ul>
-        <li>Copyright &copy 2020</li>
-        <li>Kevin Tucker</li>
-        <li>All Rights Are Reserved.</li>
-      </ul>
-      <a href="#headerlink"><p>Back To Top ^</p></a>
-    </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
