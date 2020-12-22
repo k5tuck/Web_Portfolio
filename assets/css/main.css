@@ -1974,8 +1974,8 @@ hr.major {
 }
 
 @media screen and (max-width: 480px) {
-  #interest-pics {
-    /* padding: 2em 1.5em 0.1em 1.5em; */
+  #bio section .content .inner a img {
+    width: 300px;
   }
 }
 
@@ -3391,7 +3391,7 @@ table.alt tfoot {
 
 @media screen and (max-width: 736px) {
   .wrapper > .inner {
-    padding: 3em 2em 1em 2em;
+    padding: 3em 1.2em 1em 2em;
   }
 }
 
